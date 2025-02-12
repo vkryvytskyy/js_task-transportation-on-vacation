@@ -3,17 +3,20 @@
  *
  * @return {number}
  */
+
+const PRICE_PER_DAY = 40;
+
 function calculateRentalCost(days) {
   // write code here
   if (days < 3) {
-    return days * 40
+    return days * PRICE_PER_DAY
   }
 
   if (days < 7) {
-    return (days * 40) - 20
+    return (days * PRICE_PER_DAY) - 20
   }
 
-  return (days * 40) - 50;
+  return (days * PRICE_PER_DAY) - 50;
 }
 
 module.exports = calculateRentalCost;
